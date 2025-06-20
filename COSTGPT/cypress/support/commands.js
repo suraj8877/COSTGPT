@@ -24,6 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 // cypress/support/e2e.js  (or commands.js in older versions)
+//import './commands';
 Cypress.on('uncaught:exception', (err) => {
     if (err.message.includes('Minified React error #418')) {
       return false;         

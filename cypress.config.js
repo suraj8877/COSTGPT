@@ -1,6 +1,6 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from "cypress";
 
-module.exports = defineConfig({
+export default defineConfig({
   e2e: {
     baseUrl: 'https://costgptpro.dev.codebuddy.review',
     defaultCommandTimeout: 10000,   
